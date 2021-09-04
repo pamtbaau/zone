@@ -3,6 +3,8 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
+require('@electron/remote/main').initialize();
+
 let waitBeforeClose = true;
 
 const devMode = /electron/.test(path.basename(app.getPath('exe'), '.exe'));

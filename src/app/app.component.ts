@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { Menu, MenuItemConstructorOptions, remote } from 'electron';
+import { Menu, MenuItemConstructorOptions } from 'electron';
+import * as remote from '@electron/remote';
 
 @Component({
     selector: 'app-root',
